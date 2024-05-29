@@ -1,0 +1,67 @@
+2024-05-04 20:01:43.735 | INFO     | __main__:main:23 - Demo options: 
+ Namespace(cfg='configs/demo_bedlam_cliff.yaml', ckpt='data/ckpt/bedlam_cliff.ckpt', data_split='test', dataframe_path='data/ssp_3d_test.npz', detector='yolo', display=False, eval_dataset=None, image_folder='demo_images', output_folder='demo_images/results', tracker_batch_size=1, yolo_img_size=416)
+2024-05-04 20:01:44.123 | INFO     | train.models.backbone.hrnet:init_weights:530 - => init weights from normal distribution
+2024-05-04 20:11:41.980 | INFO     | __main__:main:23 - Demo options: 
+ Namespace(cfg='configs/demo_bedlam_cliff.yaml', ckpt='data/ckpt/bedlam_cliff.ckpt', data_split='test', dataframe_path='data/ssp_3d_test.npz', detector='yolo', display=False, eval_dataset=None, image_folder='demo_images', output_folder='demo_images/results', tracker_batch_size=1, yolo_img_size=416)
+2024-05-04 20:11:42.905 | INFO     | train.models.backbone.hrnet:init_weights:530 - => init weights from normal distribution
+2024-05-04 20:11:45.100 | INFO     | train.core.tester:_load_pretrained_model:48 - Loading pretrained model from data/ckpt/bedlam_cliff.ckpt
+2024-05-04 20:16:26.885 | INFO     | __main__:main:23 - Demo options: 
+ Namespace(cfg='configs/demo_bedlam_cliff.yaml', ckpt='data/ckpt/bedlam_cliff.ckpt', data_split='test', dataframe_path='data/ssp_3d_test.npz', detector='yolo', display=False, eval_dataset=None, image_folder='demo_images', output_folder='demo_images/results', tracker_batch_size=1, yolo_img_size=416)
+2024-05-04 20:16:27.619 | INFO     | train.models.backbone.hrnet:init_weights:530 - => init weights from normal distribution
+2024-05-04 20:16:30.802 | INFO     | train.core.tester:_load_pretrained_model:48 - Loading pretrained model from data/ckpt/bedlam_cliff.ckpt
+2024-05-04 20:16:37.526 | WARNING  | train.utils.train_utils:load_pretrained_model:29 - Removing "model." keyword from state_dict keys..
+2024-05-04 20:16:38.822 | INFO     | train.core.tester:_load_pretrained_model:51 - Loaded pretrained weights from "data/ckpt/bedlam_cliff.ckpt"
+2024-05-04 20:21:15.098 | INFO     | __main__:main:23 - Demo options: 
+ Namespace(cfg='configs/demo_bedlam_cliff.yaml', ckpt='data/ckpt/bedlam_cliff.ckpt', data_split='test', dataframe_path='data/ssp_3d_test.npz', detector='yolo', display=False, eval_dataset=None, image_folder='demo_images', output_folder='demo_images/results', tracker_batch_size=1, yolo_img_size=416)
+2024-05-04 20:21:15.775 | INFO     | train.models.backbone.hrnet:init_weights:530 - => init weights from normal distribution
+2024-05-04 20:21:18.361 | INFO     | train.core.tester:_load_pretrained_model:48 - Loading pretrained model from data/ckpt/bedlam_cliff.ckpt
+2024-05-04 20:21:19.578 | WARNING  | train.utils.train_utils:load_pretrained_model:29 - Removing "model." keyword from state_dict keys..
+2024-05-04 20:21:19.672 | INFO     | train.core.tester:_load_pretrained_model:51 - Loaded pretrained weights from "data/ckpt/bedlam_cliff.ckpt"
+2024-05-04 20:28:38.887 | INFO     | __main__:main:23 - Demo options: 
+ Namespace(cfg='configs/demo_bedlam_cliff.yaml', ckpt='data/ckpt/bedlam_cliff.ckpt', data_split='test', dataframe_path='data/ssp_3d_test.npz', detector='yolo', display=False, eval_dataset=None, image_folder='demo_images', output_folder='demo_images/results', tracker_batch_size=1, yolo_img_size=416)
+2024-05-04 20:28:39.215 | INFO     | train.models.backbone.hrnet:init_weights:530 - => init weights from normal distribution
+2024-05-04 20:28:40.773 | INFO     | train.core.tester:_load_pretrained_model:48 - Loading pretrained model from data/ckpt/bedlam_cliff.ckpt
+2024-05-04 20:28:41.647 | WARNING  | train.utils.train_utils:load_pretrained_model:29 - Removing "model." keyword from state_dict keys..
+2024-05-04 20:28:41.730 | INFO     | train.core.tester:_load_pretrained_model:51 - Loaded pretrained weights from "data/ckpt/bedlam_cliff.ckpt"
+2024-05-04 20:30:35.271 | INFO     | __main__:main:23 - Demo options: 
+ Namespace(cfg='configs/demo_bedlam_cliff.yaml', ckpt='data/ckpt/bedlam_cliff.ckpt', data_split='test', dataframe_path='data/ssp_3d_test.npz', detector='yolo', display=False, eval_dataset=None, image_folder='demo_images', output_folder='demo_images/results', tracker_batch_size=1, yolo_img_size=416)
+2024-05-04 20:30:35.591 | INFO     | train.models.backbone.hrnet:init_weights:530 - => init weights from normal distribution
+2024-05-04 20:30:37.111 | INFO     | train.core.tester:_load_pretrained_model:48 - Loading pretrained model from data/ckpt/bedlam_cliff.ckpt
+2024-05-04 20:30:37.999 | WARNING  | train.utils.train_utils:load_pretrained_model:29 - Removing "model." keyword from state_dict keys..
+2024-05-04 20:30:38.077 | INFO     | train.core.tester:_load_pretrained_model:51 - Loaded pretrained weights from "data/ckpt/bedlam_cliff.ckpt"
+2024-05-04 20:32:51.354 | INFO     | __main__:main:23 - Demo options: 
+ Namespace(cfg='configs/demo_bedlam_cliff.yaml', ckpt='data/ckpt/bedlam_cliff.ckpt', data_split='test', dataframe_path='data/ssp_3d_test.npz', detector='yolo', display=False, eval_dataset=None, image_folder='demo_images', output_folder='demo_images/results', tracker_batch_size=1, yolo_img_size=416)
+2024-05-04 20:32:51.667 | INFO     | train.models.backbone.hrnet:init_weights:530 - => init weights from normal distribution
+2024-05-04 20:32:53.204 | INFO     | train.core.tester:_load_pretrained_model:48 - Loading pretrained model from data/ckpt/bedlam_cliff.ckpt
+2024-05-04 20:32:54.045 | WARNING  | train.utils.train_utils:load_pretrained_model:29 - Removing "model." keyword from state_dict keys..
+2024-05-04 20:32:54.138 | INFO     | train.core.tester:_load_pretrained_model:51 - Loaded pretrained weights from "data/ckpt/bedlam_cliff.ckpt"
+2024-05-04 20:32:57.456 | INFO     | train.core.tester:run_on_image_folder:132 - Writing output files to demo_images/results
+2024-05-04 20:32:57.769 | INFO     | train.core.tester:run_on_image_folder:132 - Writing output files to demo_images/results
+2024-05-04 20:32:58.016 | INFO     | train.core.tester:run_on_image_folder:132 - Writing output files to demo_images/results
+2024-05-04 20:32:58.323 | INFO     | train.core.tester:run_on_image_folder:132 - Writing output files to demo_images/results
+2024-05-04 20:32:58.583 | INFO     | train.core.tester:run_on_image_folder:132 - Writing output files to demo_images/results
+2024-05-04 20:32:58.669 | INFO     | __main__:main:42 - ================= END =================
+2024-05-04 20:36:12.657 | INFO     | __main__:main:23 - Demo options: 
+ Namespace(cfg='configs/demo_bedlam_cliff.yaml', ckpt='data/ckpt/bedlam_cliff.ckpt', data_split='test', dataframe_path='data/ssp_3d_test.npz', detector='yolo', display=False, eval_dataset=None, image_folder='demo_images', output_folder='demo_images/results', tracker_batch_size=1, yolo_img_size=416)
+2024-05-04 20:36:12.993 | INFO     | train.models.backbone.hrnet:init_weights:530 - => init weights from normal distribution
+2024-05-04 20:36:14.596 | INFO     | train.core.tester:_load_pretrained_model:48 - Loading pretrained model from data/ckpt/bedlam_cliff.ckpt
+2024-05-04 20:36:15.503 | WARNING  | train.utils.train_utils:load_pretrained_model:29 - Removing "model." keyword from state_dict keys..
+2024-05-04 20:36:15.597 | INFO     | train.core.tester:_load_pretrained_model:51 - Loaded pretrained weights from "data/ckpt/bedlam_cliff.ckpt"
+2024-05-04 20:36:18.991 | INFO     | train.core.tester:run_on_image_folder:132 - Writing output files to demo_images/results
+2024-05-04 20:36:19.288 | INFO     | train.core.tester:run_on_image_folder:132 - Writing output files to demo_images/results
+2024-05-04 20:36:19.529 | INFO     | train.core.tester:run_on_image_folder:132 - Writing output files to demo_images/results
+2024-05-04 20:36:19.821 | INFO     | train.core.tester:run_on_image_folder:132 - Writing output files to demo_images/results
+2024-05-04 20:36:20.064 | INFO     | train.core.tester:run_on_image_folder:132 - Writing output files to demo_images/results
+2024-05-04 20:36:20.155 | INFO     | __main__:main:42 - ================= END =================
+2024-05-04 20:37:28.332 | INFO     | __main__:main:23 - Demo options: 
+ Namespace(cfg='configs/demo_bedlam_cliff.yaml', ckpt='data/ckpt/bedlam_cliff.ckpt', data_split='test', dataframe_path='data/ssp_3d_test.npz', detector='yolo', display=False, eval_dataset=None, image_folder='demo_images', output_folder='demo_images/results', tracker_batch_size=1, yolo_img_size=416)
+2024-05-04 20:37:28.650 | INFO     | train.models.backbone.hrnet:init_weights:530 - => init weights from normal distribution
+2024-05-04 20:37:30.210 | INFO     | train.core.tester:_load_pretrained_model:48 - Loading pretrained model from data/ckpt/bedlam_cliff.ckpt
+2024-05-04 20:37:31.058 | WARNING  | train.utils.train_utils:load_pretrained_model:29 - Removing "model." keyword from state_dict keys..
+2024-05-04 20:37:31.137 | INFO     | train.core.tester:_load_pretrained_model:51 - Loaded pretrained weights from "data/ckpt/bedlam_cliff.ckpt"
+2024-05-04 20:40:41.529 | INFO     | train.core.tester:run_on_image_folder:132 - Writing output files to demo_images/results
+2024-05-04 20:41:50.375 | INFO     | train.core.tester:run_on_image_folder:132 - Writing output files to demo_images/results
+2024-05-04 20:41:50.762 | INFO     | train.core.tester:run_on_image_folder:132 - Writing output files to demo_images/results
+2024-05-04 20:41:51.174 | INFO     | train.core.tester:run_on_image_folder:132 - Writing output files to demo_images/results
+2024-05-04 20:41:51.492 | INFO     | train.core.tester:run_on_image_folder:132 - Writing output files to demo_images/results
+2024-05-04 20:41:51.587 | INFO     | __main__:main:42 - ================= END =================
