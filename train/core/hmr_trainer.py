@@ -77,7 +77,7 @@ class HMRTrainer(pl.LightningModule):
     def training_step(self, batch, batch_nb, dataloader_nb=0):
 
         # GT data
-        images = batch['img']
+        images = batch['img'] #cropped images
         gt_betas = batch['betas']
         bbox_scale = batch['scale']
         bbox_center = batch['center']

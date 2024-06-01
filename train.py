@@ -174,6 +174,6 @@ def collect_checkpoints():
 if __name__ == '__main__':
     collect_checkpoints()
 
-    for part_idx in range(5):
+    for part_idx in range(195, 200):
         main(part_idx)
 
