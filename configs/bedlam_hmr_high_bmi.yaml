@@ -1,5 +1,5 @@
 DATASET:
-  BATCH_SIZE: 8
+  BATCH_SIZE: 1
   CROP_FACTOR: 0.5
   CROP_PROB: 0.2
   DATASETS_AND_RATIOS: 'static-hdri-bmi'
@@ -13,10 +13,10 @@ DATASET:
   VAL_DS: static-hdri-bmi
   CROP_PERCENT: 1.0
   ALB: true
-  PARTS_COUNT: 200
-  PART_IDX: 2
+  PARTS_COUNT: 200000
+  PART_IDX: 4
 EXP_NAME: bedlam_cam_ready
-LOG_DIR: logs
+LOG_DIR: "../storage/logs"
 OPTIMIZER:
   LR: 5.0e-05
   TYPE: adam
@@ -33,7 +33,7 @@ TESTING:
   WP_VIS: true
 TRAINING:
   CHECK_VAL_EVERY_N_EPOCH: 50
-  MAX_EPOCHS: 200
+  MAX_EPOCHS: 100
   PRETRAINED_CKPT: coco
   PRETRAINED_LIT: null
   RELOAD_DATALOADERS_EVERY_EPOCH: false

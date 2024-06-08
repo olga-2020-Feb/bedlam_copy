@@ -464,6 +464,8 @@ class HMRPartTrainer(HMRTrainer):
                 part_size = elems_count // parts_count
                 if part_size > 0:
                     dataset.set_used_idxs(np.arange(start=part_idx * part_size, stop=(part_idx + 1) * part_size))
+                else:
+                    dataset.set_used_idxs(np.arange(start=part_idx, stop=part_idx + 1))
 
         train_ds = ConcatDataset(dataset_list)
 
@@ -487,6 +489,7 @@ class HMRPartTrainer(HMRTrainer):
                 part_size = elems_count // parts_count
                 if part_size > 0:
                     dataset.set_used_idxs(np.arange(start=part_idx * part_size, stop=(part_idx + 1) * part_size))
-
+                else:
+                    dataset.set_used_idxs(np.arange(start=part_idx, stop=part_idx + 1))
             val_datasets.append(dataset)
         return val_datasets

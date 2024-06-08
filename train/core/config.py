@@ -4,51 +4,51 @@ from typing import List, Union
 from flatten_dict import flatten, unflatten
 
 
-SMPL_MODEL_DIR = r'data/body_models/SMPL_python_v.1.1.0/smpl/models'
-SMPLX_MODEL_DIR = r'data/body_models/smplx/models/smplx'
-MANO_MODEL_DIR = r'data/body_models/mano/mano_v1_2/models/'
+SMPL_MODEL_DIR = r'../storage/data/body_models/SMPL_python_v.1.1.0/smpl/models'
+SMPLX_MODEL_DIR = r'../storage/data/body_models/smplx/models/smplx'
+MANO_MODEL_DIR = r'../storage/data/body_models/mano/mano_v1_2/models/'
 
-JOINT_REGRESSOR_TRAIN_EXTRA = r'data/utils/J_regressor_extra.npy'
-JOINT_REGRESSOR_H36M = r'data/utils/J_regressor_h36m.npy'
-SMPL_MEAN_PARAMS = r'data/utils/smpl_mean_params.npz'
-JOINT_REGRESSOR_14 = r'data/utils/SMPLX_to_J14.pkl'
-SMPLX2SMPL = r'data/utils/smplx2smpl.pkl'
-MEAN_PARAMS = r'data/utils/all_means.pkl'
-DOWNSAMPLE_MAT_SMPLX_PATH = r'data/utils/downsample_mat_smplx.pkl'
+JOINT_REGRESSOR_TRAIN_EXTRA = r'../storage/data/utils/J_regressor_extra.npy'
+JOINT_REGRESSOR_H36M = r'../storage/data/utils/J_regressor_h36m.npy'
+SMPL_MEAN_PARAMS = r'../storage/data/utils/smpl_mean_params.npz'
+JOINT_REGRESSOR_14 = r'../storage/data/utils/SMPLX_to_J14.pkl'
+SMPLX2SMPL = r'../storage/data/utils/smplx2smpl.pkl'
+MEAN_PARAMS = r'../storage/data/utils/all_means.pkl'
+DOWNSAMPLE_MAT_SMPLX_PATH = r'../storage/data/utils/downsample_mat_smplx.pkl'
 
 DATASET_FOLDERS = {
-    'orbit-archviz-15': r'data/bedlam/training_images/20221014_3_250_batch01hand_orbit_archVizUI3_time15_6fps/png',
-    'static-hdri': r'data/bedlam/training_images/20221010_3_1000_batch01hand_6fps/png',
-    'static-hdri-bmi': r'data/bedlam/training_images/20221019_3_250_highbmihand_6fps/png',
+    'orbit-archviz-15': r'../storage/data/bedlam/training_images/20221014_3_250_batch01hand_orbit_archVizUI3_time15_6fps/png',
+    'static-hdri': r'../storage/data/bedlam/training_images/20221010_3_1000_batch01hand_6fps/png',
+    'static-hdri-bmi': r'../storage/data/bedlam/training_images/20221019_3_250_highbmihand_6fps/png',
 
 }
 
 DATASET_FILES = [
     {
-        'orbit-archviz-15': r'data/bedlam/training_labels/all_npz_12_training/20221014_3_250_batch01hand_orbit_archVizUI3_time15_6fps.npz',
-        'static-hdri': r'data/bedlam/training_labels/all_npz_12_training/20221010_3_1000_batch01hand_6fps.npz',
-        'static-hdri-bmi': r'data/bedlam/training_labels/all_npz_12_training/20221019_3_250_highbmihand_6fps.npz',
+        'orbit-archviz-15': r'../storage/data/bedlam/training_labels/all_npz_12_training/20221014_3_250_batch01hand_orbit_archVizUI3_time15_6fps.npz',
+        'static-hdri': r'../storage/data/bedlam/training_labels/all_npz_12_training/20221010_3_1000_batch01hand_6fps.npz',
+        'static-hdri-bmi': r'../storage/data/bedlam/training_labels/all_npz_12_training/20221019_3_250_highbmihand_6fps.npz',
     },
     {
-        'orbit-archviz-15': r'data/bedlam/training_labels/all_npz_12_training/20221014_3_250_batch01hand_orbit_archVizUI3_time15_6fps.npz',
-        'static-hdri': r'data/bedlam/training_labels/all_npz_12_training/20221010_3_1000_batch01hand_6fps.npz',
-        'static-hdri-bmi': r'data/bedlam/training_labels/all_npz_12_training/20221019_3_250_highbmihand_6fps.npz',
+        'orbit-archviz-15': r'../storage/data/bedlam/training_labels/all_npz_12_training/20221014_3_250_batch01hand_orbit_archVizUI3_time15_6fps.npz',
+        'static-hdri': r'../storage/data/bedlam/training_labels/all_npz_12_training/20221010_3_1000_batch01hand_6fps.npz',
+        'static-hdri-bmi': r'../storage/data/bedlam/training_labels/all_npz_12_training/20221019_3_250_highbmihand_6fps.npz',
     }
 ]
 
 # Download the models from https://github.com/leoxiaobin/deep-high-resolution-net.pytorch and update the path
 PRETRAINED_CKPT_FOLDER = {
-    'hrnet_w32-coco': r'data/ckpt/pretrained/pose_hrnet_w32_256x192.pth',
-    'hrnet_w32-imagenet': r'data/ckpt/pretrained/hrnetv2_w32_imagenet_pretrained.pth',
+    'hrnet_w32-coco': r'../storage/data/ckpt/pretrained/pose_hrnet_w32_256x192.pth',
+    'hrnet_w32-imagenet': r'../storage/data/ckpt/pretrained/hrnetv2_w32_imagenet_pretrained.pth',
     'hrnet_w32-scratch': '',
-    'hrnet_w48-coco': r'data/ckpt/pretrained/pose_hrnet_w48_256x192.pth',
-    'hrnet_w48-imagenet': r'data/ckpt/pretrained/hrnetv2_w48_imagenet_pretrained.pth',
+    'hrnet_w48-coco': r'../storage/data/ckpt/pretrained/pose_hrnet_w48_256x192.pth',
+    'hrnet_w48-imagenet': r'../storage/data/ckpt/pretrained/hrnetv2_w48_imagenet_pretrained.pth',
     'hrnet_w48-scratch': '',
 
 }
 hparams = CN()
 # General settings
-hparams.LOG_DIR = 'logs'
+hparams.LOG_DIR = '../storage/logs'
 hparams.EXP_NAME = 'default'
 hparams.SEED_VALUE = -1
 hparams.RUN_TEST = False

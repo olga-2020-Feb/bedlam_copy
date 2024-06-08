@@ -301,7 +301,10 @@ class DatasetHMRPart(DatasetHMR):
         self.used_idxs = np.arange(DatasetHMR.__len__(self))
 
     def set_used_idxs(self, used_idxs):
-        self.used_idxs = used_idxs
+        if used_idxs is None:
+            self.used_idxs = np.arange(DatasetHMR.__len__(self))
+        else:
+            self.used_idxs = used_idxs
 
     def __len__(self):
         return len(self.used_idxs)

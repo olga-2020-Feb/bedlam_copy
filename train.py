@@ -10,7 +10,7 @@ import pytorch_lightning as pl
 from loguru import logger
 from flatten_dict import flatten, unflatten
 from pytorch_lightning.callbacks import ModelCheckpoint
-from pytorch_lightning.loggers import TensorBoardLogger
+from pytorch_lightning.loggers import TensorBoardLogger, CSVLogger, WandbLogger
 from pytorch_lightning.callbacks.progress import ProgressBar
 from train.utils.os_utils import copy_code
 from train.core.hmr_trainer import HMRTrainer, HMRPartTrainer
@@ -45,9 +45,18 @@ def train(hparams, fast_dev_run=False):
     # initialize tensorboard logger
     tb_logger = TensorBoardLogger(
         save_dir=log_dir,
-        log_graph=False,
+        log_graph=True,
     )
     experiment_loggers.append(tb_logger)
+
+    # initialize tensorboard logger
+    csv_logger = CSVLogger(
+        save_dir=log_dir
+    )
+    experiment_loggers.append(csv_logger)    # initialize tensorboard logger
+
+    wandb_logger = WandbLogger(log_model=True, save_dir=log_dir)
+    experiment_loggers.append(wandb_logger)
 
     model = HMRPartTrainer(hparams=hparams).to(device)
 
@@ -138,7 +147,7 @@ def main(part_idx = None):
 def prepare_argparser():
     parser = argparse.ArgumentParser()
     parser.add_argument('--cfg', type=str, help='cfg file path')
-    parser.add_argument('--log_dir', type=str, help='log dir path', default='./logs')
+    parser.add_argument('--log_dir', type=str, help='log dir path', default='../storage/logs')
     parser.add_argument('--fdr', action='store_true')
     parser.add_argument('--test', action='store_true')
     parser.add_argument('--resume', action='store_true')
@@ -150,7 +159,7 @@ def collect_checkpoints():
     global args, hparams
     log_dir = os.path.abspath( r'logs')
     log_folders = os.listdir(log_dir)
-    new_folder_name = 'first 10 small 128 n_iter = 1'
+    new_folder_name = 'small 128 n_iter = 1 part_size = 1'
     dst_folder = os.path.join(log_dir, new_folder_name)
     os.makedirs(dst_folder, exist_ok=True)
     parser = prepare_argparser()
@@ -172,8 +181,7 @@ def collect_checkpoints():
 
 
 if __name__ == '__main__':
-    collect_checkpoints()
-
-    for part_idx in range(195, 200):
+    for part_idx in range(0, 200000):
         main(part_idx)
+    collect_checkpoints()
 
